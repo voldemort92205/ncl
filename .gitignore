@@ -1,0 +1,6 @@
+# vim tmp file
+.*.swp
+
+
+# if want to add execute file, the executible file name : a.out
+a.out
