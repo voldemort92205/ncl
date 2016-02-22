@@ -12,6 +12,24 @@ undef ("strcmp")
 function strcmp (string1:string, string2:string)
 begin
 	strlen1 = strlen (string1)
+	src = stringtochar (string1)
 	strlen2 = strlen (string2)
+	dest = stringtochar (string2)
+
+	; set the smallest length
+	len = strlen1
+	if (len .lt. strlen2) then
+		len = strlen2
+	end if
+
+	if (strlen1 .ne. strlen2) then
+		return (1)
+	end if
+
+	i = 0
+	do while (i .lt. len)
+		i = i + 1
+	end do
 	return (0)
 end
+
